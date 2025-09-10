@@ -1,3 +1,4 @@
+<meta charset="UTF-8"/>
 <script>
     //Problema: Identificar Caracteres
     /*
@@ -7,10 +8,29 @@
 
     //Entrada
 
+    let p = prompt(`Informe uma palavra:`).toUpperCase();
+    Array.from(p);
+    let listaV = 0;
+    let listaC = 0;
 
     //Processamento
 
-
+    for (let item of p) {
+        switch (item) {
+            case `A`:
+            case `E`:
+            case `I`:
+            case `O`:
+            case `U`:
+                listaV++;
+                break;
+            default:
+                listaC++;
+                break;
+        }
+    }
     //Saída
+
+    alert(`A quantidade de vogal é ${listaV} \n A quantidade de consoante é ${listaC}`);
 
 </script>

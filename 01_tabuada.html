@@ -8,10 +8,22 @@
 
     //Entrada
 
+    let multiplicador = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    const n = Number(prompt(`Informe o número que deseja calcular a tabuada:`));
 
     //Processamento
 
+    let tabuada = [];
+
+    for (let item of multiplicador) {
+
+        tabuada.push(n * item)
+
+    }
 
     //Saída
-    
+
+    alert(`A tabuada do número ${n} é ${tabuada}`);
+
 </script>
